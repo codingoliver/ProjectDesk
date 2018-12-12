@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexboxin' it</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+
+ 
+    
+  </head>
+
+  <body>
+            <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <div class="top-left-part"><a class="logo" href="index.html"><i class="glyphicon glyphicon-fire"></i>&nbsp;<span class="hidden-xs">Easyproject</span></a></div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs hidden-lg
+ waves-effect waves-light"><i class="ti-arrow-circle-left ti-menu"></i>
+</a></li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search..." class="form-control">
+                            <a href=""><i class="ti-search"></i></a>
+                        </form>
+                    </li>
+                    <li>
+                       
+                        <div class="btn-group user-helper-dropdown">
+                        <a class="profile-pic" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <img src="<?php echo base_url($data[0]->image); ?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs"><?php echo $data[0]->fullname ?></b> </a>
+
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="<?php echo base_url('index.php/Welcome/student_profile') ?>"><i class="ti-user fa-fw"></i>Profile</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="<?php echo base_url('index.php/Welcome/sign_out') ?>"><i class="ti-na fa-fw"></i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+    <div class="container">
+    	
+
+  <div class="contacts waves-effect">
+    <div class="buttons">
+      <button class="new-message fa-envelope-o"></button><button class="search fa-search"></button>
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="messages">
+    <ul>
+      <li>
+        <div class="container darker">
+  <img src="img/images.jpg" alt="Avatar" class="right">
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  <span class="time-left">11:01</span>
+</div>
+
+      </li>
+      <li>
+        <div class="container ">
+  <img src="img/img2.png" alt="Avatar" class="right">
+  <p>Sure enough man!</p>
+  <span class="time-left">11:01</span>
+</div>
+      </li>
+      <li>
+       <div class="container darker">
+  <img src="img/images.jpg" alt="Avatar" class="right">
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  <span class="time-left">11:01</span>
+</div>
+      </li>
+      <li>
+        <div class="container ">
+  <img src="img/img2.png" alt="Avatar" class="right">
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  <span class="time-left">11:01</span>
+</div>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="stack-wrap"></div>
+  <div class="form">
+    <div class="form-inner">
+      <button>&gt</button>
+    </div>
+  </div>
+</div>
+    
+        <script src="js/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+
+    
+    
+    
+  </body>
+</html>
